@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9905-8f69-bf6f-fcb0" revision="1" gameSystemId="5832-5ca9-6b32-ab81" gameSystemRevision="1" battleScribeVersion="1.15" name="Chaos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9905-8f69-bf6f-fcb0" revision="2" gameSystemId="5832-5ca9-6b32-ab81" gameSystemRevision="1" battleScribeVersion="1.15" name="Chaos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="fc7c-8fcb-9670-b04d" name="Warband Dedication" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -120,13 +120,34 @@
       <modifiers/>
     </link>
     <link id="fd46-340a-81d6-4945" targetId="7142-e365-1c12-efd6" linkType="entry" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </link>
     <link id="8671-8b61-13ff-fff8" targetId="bfbb-5f37-6875-a0ef" linkType="entry" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </link>
     <link id="0f54-2946-c204-3a3a" targetId="6fc3-e706-bcf0-dfa2" linkType="entry" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </link>
     <link id="e8a5-b9a0-f222-dcd5" targetId="5827-0f87-428a-2bdf" linkType="entry" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
       <modifiers/>
@@ -159,7 +180,14 @@
       <modifiers/>
     </link>
     <link id="9887-7e01-b7c5-d19d" targetId="fdf1-0a0c-3ed7-472e" linkType="entry" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </link>
     <link id="4b62-8e58-c381-a5c9" targetId="7806-e464-ae5c-dc49" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
       <modifiers/>
@@ -1122,8 +1150,9 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="598f-3cba-b8c5-e748" childId="d88d-df47-ba49-3058" field="selections" type="equal to" value="1.0"/>
                     <condition parentId="598f-3cba-b8c5-e748" childId="1071-8ba0-fd6e-e489" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="598f-3cba-b8c5-e748" childId="f0e5-e1b7-4c39-88a9" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -1224,6 +1253,12 @@
             <modifier type="append" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="+2" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
                 <condition parentId="roster" childId="7fd8-ecb1-aa5f-6c48" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -1690,8 +1725,9 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="7806-e464-ae5c-dc49" childId="aff1-1371-b479-2561" field="selections" type="equal to" value="1.0"/>
                     <condition parentId="7806-e464-ae5c-dc49" childId="e6f0-4ca8-beef-0782" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="7806-e464-ae5c-dc49" childId="e022-71d7-f945-a5f4" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -1767,6 +1803,12 @@
             <modifier type="set" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="D6" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
                 <condition parentId="roster" childId="5fc4-d69b-0f19-e9ff" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -5156,7 +5198,7 @@
         </link>
       </links>
     </entry>
-    <entry id="6fc3-e706-bcf0-dfa2" name="Noise Marines" points="0.0" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="6fc3-e706-bcf0-dfa2" name="Noise Marines" points="0.0" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
       <entries>
         <entry id="ebc8-0496-dfc3-8d03" name="Icon of Excess" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -5312,7 +5354,14 @@
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles>
         <profile id="4341-16ff-90f0-34e4" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Noise Marine" hidden="false" page="0">
@@ -6817,6 +6866,18 @@
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="increment" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="9832-6438-ea96-d6d6" childId="0daa-61c7-6e7b-a1c3" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="9832-6438-ea96-d6d6" childId="fd57-9680-79da-f9e3" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </link>
         <link id="7933-1dc7-153b-2d4e" targetId="ae970133-d0be-0936-0b4b-009985e0be18" linkType="rule">
@@ -7913,13 +7974,13 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
             </link>
           </links>
         </entry>
-        <entry id="0a81-4601-29c1-70e2" name="07 - Dark Patronage (Khorne Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entry id="0a81-4601-29c1-70e2" name="07 - Dark Patronage (Khorne Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -7957,13 +8018,13 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
           <profiles/>
           <links/>
         </entry>
-        <entry id="5c76-61af-aaca-097f" name="07 - Dark Patronage (Nurgle Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entry id="5c76-61af-aaca-097f" name="07 - Dark Patronage (Nurgle Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -7997,13 +8058,13 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
           <profiles/>
           <links/>
         </entry>
-        <entry id="893d-9bc4-0223-051e" name="07 - Dark Patronage (Tzeentch Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entry id="893d-9bc4-0223-051e" name="07 - Dark Patronage (Tzeentch Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -8045,13 +8106,13 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
             </link>
           </links>
         </entry>
-        <entry id="2876-b282-6b3a-f749" name="07 - Dark Patronage (Slaanesh Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entry id="2876-b282-6b3a-f749" name="07 - Dark Patronage (Slaanesh Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
