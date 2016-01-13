@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9905-8f69-bf6f-fcb0" revision="2" gameSystemId="5832-5ca9-6b32-ab81" gameSystemRevision="1" battleScribeVersion="1.15" name="Chaos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9905-8f69-bf6f-fcb0" revision="3" gameSystemId="5832-5ca9-6b32-ab81" gameSystemRevision="1" battleScribeVersion="1.15" name="Chaos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="fc7c-8fcb-9670-b04d" name="Warband Dedication" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -190,6 +190,9 @@
       </modifiers>
     </link>
     <link id="4b62-8e58-c381-a5c9" targetId="7806-e464-ae5c-dc49" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
+      <modifiers/>
+    </link>
+    <link id="7e87-7715-fa07-949c" targetId="b894-78cb-7d6c-9db9" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
       <modifiers/>
     </link>
   </links>
@@ -695,13 +698,13 @@
       <entryGroups>
         <entryGroup id="3a6c-1232-d90e-fb2e" name="Mount / Jump pack / Chaos bike" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
-            <entry id="1071-8ba0-fd6e-e489" name="Juggernaut of Khorne" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="1071-8ba0-fd6e-e489" name="Juggernaut of Khorne" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -747,13 +750,13 @@
                 </link>
               </links>
             </entry>
-            <entry id="f0e5-e1b7-4c39-88a9" name="Disc of Tzeetch" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="f0e5-e1b7-4c39-88a9" name="Disc of Tzeetch" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="roster" childId="0ccb-f974-0798-d3ce" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="0ccb-f974-0798-d3ce" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -772,13 +775,13 @@
                 </link>
               </links>
             </entry>
-            <entry id="e39e-e063-0b5e-5ede" name="Palanquin of Nurgle" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="e39e-e063-0b5e-5ede" name="Palanquin of Nurgle" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -800,13 +803,13 @@
                 </link>
               </links>
             </entry>
-            <entry id="1893-870c-e46a-56c6" name="Steed of Slaanesh" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="1893-870c-e46a-56c6" name="Steed of Slaanesh" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -926,7 +929,7 @@
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="988d-9464-ccd8-4a95" name="Terminator Weapons" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entryGroup id="988d-9464-ccd8-4a95" name="Terminator Weapons" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups>
             <entryGroup id="0b71-bedf-6ffa-f4d2" name="Terminator Melee Weapon" defaultEntryId="4084-f0f8-c3fe-44c5" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -1076,22 +1079,22 @@
               </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="598f-3cba-b8c5-e748" childId="6361-4913-97b7-e2cf" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="598f-3cba-b8c5-e748" childId="6361-4913-97b7-e2cf" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
           <links/>
         </entryGroup>
-        <entryGroup id="cd0d-e1b7-4283-d059" name="Power Armour Weapons" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entryGroup id="cd0d-e1b7-4283-d059" name="Power Armour Weapons" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="598f-3cba-b8c5-e748" childId="6361-4913-97b7-e2cf" field="selections" type="equal to" value="0.0"/>
+                <condition parentId="598f-3cba-b8c5-e748" childId="6361-4913-97b7-e2cf" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -1298,13 +1301,13 @@
       <entryGroups>
         <entryGroup id="89c3-32c9-2125-9483" name="Mount / Jump pack / Chaos bike" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
-            <entry id="e6f0-4ca8-beef-0782" name="Juggernaut of Khorne" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="e6f0-4ca8-beef-0782" name="Juggernaut of Khorne" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -1350,13 +1353,13 @@
                 </link>
               </links>
             </entry>
-            <entry id="e022-71d7-f945-a5f4" name="Disc of Tzeetch" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="e022-71d7-f945-a5f4" name="Disc of Tzeetch" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="roster" childId="0ccb-f974-0798-d3ce" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="0ccb-f974-0798-d3ce" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -1375,13 +1378,13 @@
                 </link>
               </links>
             </entry>
-            <entry id="2b96-f89c-96d0-6bfd" name="Palanquin of Nurgle" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="2b96-f89c-96d0-6bfd" name="Palanquin of Nurgle" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -1403,13 +1406,13 @@
                 </link>
               </links>
             </entry>
-            <entry id="efba-c31a-1a8e-f2f2" name="Steed of Slaanesh" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="efba-c31a-1a8e-f2f2" name="Steed of Slaanesh" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -1529,7 +1532,7 @@
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="95e0-affa-f88f-c6d0" name="Terminator Weapons" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entryGroup id="95e0-affa-f88f-c6d0" name="Terminator Weapons" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups>
             <entryGroup id="3547-fd62-81a1-36a4" name="Terminator Melee Weapon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -1655,22 +1658,22 @@
               </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="7806-e464-ae5c-dc49" childId="e876-d3c9-a0a4-4402" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="7806-e464-ae5c-dc49" childId="e876-d3c9-a0a4-4402" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
           <links/>
         </entryGroup>
-        <entryGroup id="6066-eb81-27bf-a487" name="Power Armour Weapons" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entryGroup id="6066-eb81-27bf-a487" name="Power Armour Weapons" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="7806-e464-ae5c-dc49" childId="e876-d3c9-a0a4-4402" field="selections" type="equal to" value="0.0"/>
+                <condition parentId="7806-e464-ae5c-dc49" childId="e876-d3c9-a0a4-4402" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -1830,6 +1833,9 @@
           <modifiers/>
         </link>
         <link id="3c20-cca2-c146-5aa8" targetId="59323c0b-e16f-e72a-273d-ca3bb30d53b7" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="c479-b091-3920-8789" targetId="32e2-1b64-64b1-a949" linkType="entry group">
           <modifiers/>
         </link>
       </links>
@@ -2430,7 +2436,7 @@
     </entry>
     <entry id="abee-429f-503a-074f" name="Chaos Spawn" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
-        <entry id="094d-1e41-d9e9-8d75" name="Spawn" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="094d-1e41-d9e9-8d75" name="Spawn" points="0.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -2486,7 +2492,7 @@
     <entry id="8a3b-80c7-0cf3-e044" name="Chaos Terminators" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
       <entryGroups>
-        <entryGroup id="4a1b-d975-a299-25a4" name="Unit size: 3-10 Models" minSelections="5" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="4a1b-d975-a299-25a4" name="Unit size" minSelections="5" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="9cb6-110c-a6c8-fb06" name="Chaos Terminator" points="0.0" categoryId="(No Category)" type="model" minSelections="3" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
@@ -3478,13 +3484,13 @@
       <entryGroups>
         <entryGroup id="fb12-d7a2-c5e6-6b65" name="Daemonic Alignment" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
-            <entry id="2c0b-5dac-257c-58fd" name="Nurgle" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="2c0b-5dac-257c-58fd" name="Nurgle" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -3503,13 +3509,13 @@
                 </link>
               </links>
             </entry>
-            <entry id="0b98-1ac4-b3f4-7bff" name="Tzeentch" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="0b98-1ac4-b3f4-7bff" name="Tzeentch" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -3528,13 +3534,13 @@
                 </link>
               </links>
             </entry>
-            <entry id="2a91-54ae-dc26-fb78" name="Slaanesh" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="2a91-54ae-dc26-fb78" name="Slaanesh" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -3553,13 +3559,13 @@
                 </link>
               </links>
             </entry>
-            <entry id="11e3-4975-c89e-eaa8" name="Khorne" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="11e3-4975-c89e-eaa8" name="Khorne" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -3630,8 +3636,10 @@
               </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Flying Monstrous Creature (Character)" repeat="true" numRepeats="1" incrementParentId="c5a2-5d3b-99c9-7b99" incrementChildId="b77f-4f8b-95c8-adb7" incrementField="selections" incrementValue="1.0">
-              <conditions/>
+            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Flying Monstrous Creature (Character)" repeat="false" numRepeats="1" incrementParentId="c5a2-5d3b-99c9-7b99" incrementChildId="b77f-4f8b-95c8-adb7" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="c5a2-5d3b-99c9-7b99" childId="b77f-4f8b-95c8-adb7" field="selections" type="equal to" value="1.0"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
             <modifier type="decrement" field="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
@@ -3741,6 +3749,9 @@
           <modifiers/>
         </link>
         <link id="97b1-6a30-d2ba-73e5" targetId="530bb69e-c246-fccd-1688-f1cfba50c251" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="98f5-2be0-12c7-2e69" targetId="32e2-1b64-64b1-a949" linkType="entry group">
           <modifiers/>
         </link>
       </links>
@@ -5135,7 +5146,7 @@
     </entry>
     <entry id="5827-0f87-428a-2bdf" name="Mutilator" points="0.0" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
-        <entry id="ba85-9ad0-107f-4641" name="Multilator" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="ba85-9ad0-107f-4641" name="Multilator" points="0.0" categoryId="(No Category)" type="model" minSelections="3" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -5404,7 +5415,7 @@
     </entry>
     <entry id="07c3-8ec0-bfc9-8f99" name="Obliterators" points="0.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
-        <entry id="53c8-56d7-5b8f-0dd5" name="Obliterator" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="53c8-56d7-5b8f-0dd5" name="Obliterator" points="0.0" categoryId="(No Category)" type="model" minSelections="3" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -5495,6 +5506,9 @@
           </modifiers>
         </link>
         <link id="4e62-3156-eb80-7fb8" targetId="d32e5abf-de5b-a35a-beec-cba3220b837f" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="5dcc-1d3b-44ab-d222" targetId="32e2-1b64-64b1-a949" linkType="entry group">
           <modifiers/>
         </link>
       </links>
@@ -6087,7 +6101,7 @@
         </entry>
         <entry id="510f-6e07-6f31-12b1" name="Raptor" points="0.0" categoryId="(No Category)" type="model" minSelections="4" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries>
-            <entry id="813c-19cf-44f4-dc61" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="813c-19cf-44f4-dc61" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -6099,7 +6113,7 @@
                 </link>
               </links>
             </entry>
-            <entry id="823c-cee9-a1e7-a40f" name="Close Combat Weapon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="823c-cee9-a1e7-a40f" name="Close Combat Weapon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -6408,6 +6422,12 @@
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="9832-6438-ea96-d6d6" childId="c546-0270-af98-1eaa" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <links/>
         </entryGroup>
@@ -6463,7 +6483,7 @@
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="b155-2fff-f93d-ed20" name="Terminator Weapons" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entryGroup id="b155-2fff-f93d-ed20" name="Terminator Weapons" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups>
             <entryGroup id="cd82-6b60-b4d5-c5ca" name="Terminator Melee Weapon" defaultEntryId="b037-0c1a-8315-67d6" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -6592,9 +6612,9 @@
               </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="9832-6438-ea96-d6d6" childId="c546-0270-af98-1eaa" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="9832-6438-ea96-d6d6" childId="c546-0270-af98-1eaa" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -6604,7 +6624,7 @@
         <entryGroup id="9fee-110c-4018-3f8c" name="Power Armour Weapons" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups>
-            <entryGroup id="1f4f-a30d-e10d-7608" name="CCW Arm" defaultEntryId="f3ea-f77b-467d-8864" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+            <entryGroup id="1f4f-a30d-e10d-7608" name="CCW Arm" defaultEntryId="f3ea-f77b-467d-8864" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
                 <entry id="f3ea-f77b-467d-8864" name="Close Combat Weapon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
@@ -6656,14 +6676,7 @@
                 </entry>
               </entries>
               <entryGroups/>
-              <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="9832-6438-ea96-d6d6" childId="c546-0270-af98-1eaa" field="selections" type="equal to" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
               <links>
                 <link id="31e0-f741-4702-689b" targetId="510d2050-e668-b844-1ab4-221cd947e968" linkType="entry group">
                   <modifiers/>
@@ -6676,7 +6689,7 @@
                 </link>
               </links>
             </entryGroup>
-            <entryGroup id="aafc-f946-21ee-3b5c" name="Bolt Pistol Arm" defaultEntryId="028a-52f2-8ccd-9f4f" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+            <entryGroup id="aafc-f946-21ee-3b5c" name="Bolt Pistol Arm" defaultEntryId="028a-52f2-8ccd-9f4f" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
                 <entry id="028a-52f2-8ccd-9f4f" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
@@ -6776,18 +6789,18 @@
                 </entry>
               </entries>
               <entryGroups/>
-              <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="9832-6438-ea96-d6d6" childId="c546-0270-af98-1eaa" field="selections" type="equal to" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
               <links/>
             </entryGroup>
           </entryGroups>
-          <modifiers/>
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="9832-6438-ea96-d6d6" childId="c546-0270-af98-1eaa" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links/>
         </entryGroup>
       </entryGroups>
@@ -6902,6 +6915,9 @@
           <modifiers/>
         </link>
         <link id="1590-633a-d75f-0d26" targetId="530bb69e-c246-fccd-1688-f1cfba50c251" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="56fd-ca0f-4277-fcbb" targetId="32e2-1b64-64b1-a949" linkType="entry group">
           <modifiers/>
         </link>
       </links>
@@ -7448,6 +7464,61 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
         </link>
       </links>
     </entry>
+    <entry id="b894-78cb-7d6c-9db9" name="Chaos Spawn (Hero)" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="7ae5-36dd-0a7c-6075" name="Spawn" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="7423-c401-82f8-ef1c" targetId="5d03f0dc-b84b-6878-b36c-2cf4140a053d" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="5a3f-9457-81c8-9be9" targetId="4bf37f51-e484-ff05-0545-f477a09d1f6b" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="0c5c-df98-96aa-6064" targetId="2a4fd5b9-69cf-5ecf-8225-e07f016c2a52" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="00ca-b93b-edb6-08ce" targetId="b3feb676-c1d4-3d48-a8b7-3aa4a87188ef" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="3e2b-a53d-77c0-7de5" targetId="c36b4aae-d2ae-5058-2d3e-80d114a6043a" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="3f99-e273-c3c3-54ca" targetId="aa1504f8-0ab7-d06c-cb7d-8eef3c2911cd" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="6c10-878e-550c-3c9d" targetId="a29b139e-6d67-8464-7266-814ce16c1205" linkType="profile">
+          <modifiers>
+            <modifier type="increment" field="a558b3ef-04d0-440e-a312-bac3255bf592" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+        <link id="cbc1-3fc7-5132-e625" targetId="32e2-1b64-64b1-a949" linkType="entry group">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="7bda-7c33-ecff-a43a" name="Chaos Artefact Weapons" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -7886,13 +7957,13 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
             </link>
           </links>
         </entry>
-        <entry id="cffb-ecdc-625d-e886" name="06 - Dark Patronage (Tzeentch Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entry id="cffb-ecdc-625d-e886" name="06 - Dark Patronage (Tzeentch Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -7906,13 +7977,13 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
           <profiles/>
           <links/>
         </entry>
-        <entry id="de6b-0c73-ce44-2a4e" name="06 - Dark Patronage (Khorne Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entry id="de6b-0c73-ce44-2a4e" name="06 - Dark Patronage (Khorne Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -7926,13 +7997,13 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
           <profiles/>
           <links/>
         </entry>
-        <entry id="7d69-5699-6455-87f0" name="06 - Dark Patronage (Nurgle Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entry id="7d69-5699-6455-87f0" name="06 - Dark Patronage (Nurgle Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -7950,13 +8021,13 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
             </link>
           </links>
         </entry>
-        <entry id="fb8f-c840-bf3f-3bfb" name="06 - Dark Patronage (Slaanesh Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entry id="fb8f-c840-bf3f-3bfb" name="06 - Dark Patronage (Slaanesh Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -7998,13 +8069,13 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
             </link>
           </links>
         </entry>
-        <entry id="7fd8-ecb1-aa5f-6c48" name="08 - Dark Patronage (Khorne Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entry id="7fd8-ecb1-aa5f-6c48" name="08 - Dark Patronage (Khorne Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -8038,13 +8109,13 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
           <profiles/>
           <links/>
         </entry>
-        <entry id="4f80-bbb6-7be0-2c5c" name="08 - Dark Patronage (Nurgle Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entry id="4f80-bbb6-7be0-2c5c" name="08 - Dark Patronage (Nurgle Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -8082,13 +8153,13 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
             </link>
           </links>
         </entry>
-        <entry id="f14e-12eb-c28d-7a93" name="08 - Dark Patronage (Tzeentch Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entry id="f14e-12eb-c28d-7a93" name="08 - Dark Patronage (Tzeentch Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -8126,13 +8197,13 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
           <profiles/>
           <links/>
         </entry>
-        <entry id="85b6-18f1-bdff-39a8" name="08 - Dark Patronage (Slaanesh Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entry id="85b6-18f1-bdff-39a8" name="08 - Dark Patronage (Slaanesh Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
