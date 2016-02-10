@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9905-8f69-bf6f-fcb0" revision="4" gameSystemId="5832-5ca9-6b32-ab81" gameSystemRevision="1" battleScribeVersion="1.15" name="Chaos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9905-8f69-bf6f-fcb0" revision="5" gameSystemId="5832-5ca9-6b32-ab81" gameSystemRevision="1" battleScribeVersion="1.15" name="Chaos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="fc7c-8fcb-9670-b04d" name="Warband Dedication" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="1" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -197,6 +197,356 @@
     </link>
   </links>
   <sharedEntries>
+    <entry id="bfd3-fed0-1623-68e0" name="03 - Unstable Mutation" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="b880-d2d0-3518-6707" name="Unstable Mutation" hidden="false">
+          <description>Change the Attacks characteristic on your Champion’s profile to D6. </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="632b-ebc4-0e6d-026a" name="04 - Acidic Blood" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="ff77-54b1-db2e-7ad5" name="Acidic Blood" hidden="false">
+          <description>If your Champion is wounded in the combat phase, each enemy model in base contact suffers a S5 AP3 hit. </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="3a58-29de-9724-de17" name="05 - Soulscream" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="3652-bd46-ae12-d8c0" name="Soulscream" hidden="false">
+          <description>Your Champion gains the Fear special rule. </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="d4ad-c3c1-c691-0b57" targetId="4bf37f51-e484-ff05-0545-f477a09d1f6b" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="e770-b059-d81d-991f" name="06 - Dark Patronage (Khorne Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="0ac2-b3b3-d3f2-3e4b" name="Brazen Will" hidden="false">
+          <description>When making a Deny the Witch roll for a psychic power that targets your Champion or his unit, roll two dice for each one you spend from your pool.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="41f6-f8b3-4a39-a1b4" name="06 - Dark Patronage (Nurgle Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="4fff-b394-c80a-d9b1" name="Fleshy Folds" hidden="false">
+          <description>Your Champion gains the It Will Not Die special rule.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="87c9-97e6-ac0c-1114" targetId="893e92c2-a4b4-6646-8bac-bfa4ad7a776d" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="5e33-da8c-f058-b8cf" name="06 - Dark Patronage (Slaanesh Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="f01d-3905-ce13-d859" name="Sensory Abundance" hidden="false">
+          <description>Your Champion gains the Acute Senses and Night Vision special rules. </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="7b15-ad7e-22d2-7b1a" targetId="aa22-0c2c-4620-bcab" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="30fe-b97a-6f28-5031" name="06 - Dark Patronage (Tzeentch Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="06a8-2575-0141-bbc5" name="Arcane Vessel" hidden="false">
+          <description>If you successfully make a Deny the Witch roll against a psychic power that targets your Champion or his unit, he regains D3 Wounds lost earlier in the battle. </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="d35b-9518-310c-cc54" name="07 - Dark Patronage (Khorne Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="eb71-764e-8a97-cc39" name="Red Rampage" hidden="false">
+          <description>Your Champion gains the Rampage special rule.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="6957-b932-14ef-ea15" targetId="20402bc0-5a4f-0278-3cf9-5b7793fb5161" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="61ec-2c55-22ba-058f" name="07 - Dark Patronage (Nurgle Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="b209-6955-d179-d8d9" name="Corpulent Mass" hidden="false">
+          <description>Add 1 to your Champion’s Wounds characteristic.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="9d8f-7c4c-bb5e-0c40" name="07 - Dark Patronage (Slaanesh Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="008f-dbcf-dd4a-131f" name="Unnatural Swiftness" hidden="false">
+          <description>You can re-roll failed charge rolls for your Champion, and any unit he is part of. </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="536a-2efe-8abd-2aec" name="07 - Dark Patronage (Tzeentch Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="ab61-4c1e-3866-5129" name="Warpcraft" hidden="false">
+          <description>Your Champion gains the Deep Strike special rule. If you declare that he has joined a unit when he is placed in Reserve, that unit also gains the Deep Strike special rule.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="4e99-ffcc-4aba-24b2" targetId="8716278e-3703-03c2-1f2c-f9b4f243155c" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="7be9-f13e-f9ec-d9a4" name="08 - Dark Patronage (Khorne Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="f774-e5bc-1cb2-e21b" name="Slaughterer&apos;s Rage" hidden="false">
+          <description>Add 2 to your Champion’s Attacks characteristic. </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="8422-aa52-3923-e89e" name="08 - Dark Patronage (Nurgle Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="22b7-9995-5b69-b031" name="Cloud of Flies" hidden="false">
+          <description> Enemy models halve their Weapon Skill and Ballistic Skill, rounding down, while they are within 7&quot; of your Champion. </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="2117-819a-becf-619e" name="08 - Dark Patronage (Slaanesh Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="522d-3728-7ba0-81b9" name="Bedazzling Assault" hidden="false">
+          <description>At the Initiative 10 step of the Fight sub-phase, each enemy unit that is locked in combat with your Champion, or his unit, must take an Initiative test. If the test is failed, that unit&apos;s Weapon Skill is reduced to 1 for the duration of the phase. </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="4038-6408-ecd3-09ec" name="08 - Dark Patronage (Tzeentch Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="936e-ba2d-f102-eec0" name="Secrets of Sorcery" hidden="false">
+          <description> Your Champion gains the Psyker special rule. Roll a D3 to determine his Mastery Level, and note this on your Warband Roster. He generates his powers from the Tzeentch discipline. Keep a note of which psychic powers he generates on your Warband Roster – he will keep these powers throughout the remainder of the campaign.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="f4df-31ed-3383-5862" targetId="2231f009-0a6e-e5f3-9976-c631d3ff7565" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="54ad-0150-4a62-42f2" name="09 - Voice of the Gods" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="0a8d-9b84-3d44-8052" name="Voice of the Gods" hidden="false">
+          <description>Your Champion gains the Zealot special rule. </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="daaf-f45d-5d8e-c766" targetId="ce1d1a19-a570-d613-f5ea-793f6cc9dbc7" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="87a3-125c-b24c-bd54" name="10 - Daemonic Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="7e68-6494-6825-98d4" name="Daemonic Armour" hidden="false">
+          <description> You can re-roll failed save rolls for your Champion. </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="039f-76dc-179e-0e11" name="11 - Ascendancy" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="7bd5-40a6-8031-c764" name="Ascendancy" hidden="false">
+          <description>Your Champion gains the Daemon special rule. </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="4b33-0f76-d59f-7c5a" targetId="1e872ce3-4417-cd8f-5516-ccd120a2b36c" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="e6f25083-8a79-9dd3-e3d9-c15010879a1c" name="Axe of Blind Fury" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
       <entryGroups/>
@@ -338,7 +688,32 @@
           </links>
         </entry>
         <entry id="3987-81f6-1d99-00d1" name="Chaos Biker" points="0.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
+          <entries>
+            <entry id="57ec-2382-cf38-3cf0" name="Frag Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="72ad-db8f-8af3-b3e3" targetId="59323c0b-e16f-e72a-273d-ca3bb30d53b7" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="5741-4231-87a8-10ac" name="Krak Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="b7cb-3a83-b6d6-5e38" targetId="530bb69e-c246-fccd-1688-f1cfba50c251" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
           <entryGroups/>
           <modifiers/>
           <rules/>
@@ -873,7 +1248,32 @@
         <entryGroup id="bf2d-7c20-6094-78b7" name="Armour" defaultEntryId="89a1-e676-5224-1b3a" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="89a1-e676-5224-1b3a" name="Power Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
+              <entries>
+                <entry id="4e7e-6dbc-83e3-c5a2" name="Krak Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="3823-6490-0353-45f6" targetId="530bb69e-c246-fccd-1688-f1cfba50c251" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="e091-b00f-9494-bb3f" name="Frag Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="d75a-9a5d-cde0-84f5" targetId="59323c0b-e16f-e72a-273d-ca3bb30d53b7" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
               <entryGroups/>
               <modifiers/>
               <rules/>
@@ -905,13 +1305,13 @@
         </entryGroup>
         <entryGroup id="916e-a70d-97e7-3d34" name="Special Issue Wargear" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
-            <entry id="6697-0792-3a3f-2a0f" name="Blight grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="6697-0792-3a3f-2a0f" name="Blight grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="show" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="598f-3cba-b8c5-e748" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="598f-3cba-b8c5-e748" childId="71d6-80a2-d4d7-63b0" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -1029,7 +1429,7 @@
                     </link>
                   </links>
                 </entry>
-                <entry id="241d-8839-5128-3215" name="Lightning Claw" points="17.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="241d-8839-5128-3215" name="Lightning Claw" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -1041,7 +1441,7 @@
                     </link>
                   </links>
                 </entry>
-                <entry id="ad1f-aee1-9cf9-5762" name="Power Fist" points="22.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="ad1f-aee1-9cf9-5762" name="Power Fist" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -1053,7 +1453,7 @@
                     </link>
                   </links>
                 </entry>
-                <entry id="33e9-dc2d-c40b-80df" name="Chainfist" points="27.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="33e9-dc2d-c40b-80df" name="Chainfist" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -1190,7 +1590,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition parentId="598f-3cba-b8c5-e748" childId="1071-8ba0-fd6e-e489" field="selections" type="equal to" value="1.0"/>
-                    <condition parentId="roster" childId="5c76-61af-aaca-097f" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="61ec-2c55-22ba-058f" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -1266,19 +1666,13 @@
             </modifier>
             <modifier type="set" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="D6" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="5fc4-d69b-0f19-e9ff" field="selections" type="equal to" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="append" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="+1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="5fc4-d69b-0f19-e9ff" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="598f-3cba-b8c5-e748" childId="bfd3-fed0-1623-68e0" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
             <modifier type="append" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="+2" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="7fd8-ecb1-aa5f-6c48" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="598f-3cba-b8c5-e748" childId="7be9-f13e-f9ec-d9a4" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -1318,16 +1712,10 @@
         <link id="a91d-338a-618a-6e78" targetId="d32e5abf-de5b-a35a-beec-cba3220b837f" linkType="entry">
           <modifiers/>
         </link>
-        <link id="ea65-678f-b743-b95b" targetId="530bb69e-c246-fccd-1688-f1cfba50c251" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="a14a-28e7-7a94-b436" targetId="59323c0b-e16f-e72a-273d-ca3bb30d53b7" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="612e-e7ed-0c35-f08f" targetId="3fef-a176-fad9-561a" linkType="entry group">
-          <modifiers/>
-        </link>
         <link id="ecf8-8522-4ab5-43d9" targetId="342d-e8b6-eca8-4645" linkType="entry group">
+          <modifiers/>
+        </link>
+        <link id="5e8b-1dc7-3623-b3bf" targetId="3fef-a176-fad9-561a" linkType="entry group">
           <modifiers/>
         </link>
       </links>
@@ -1488,7 +1876,32 @@
         <entryGroup id="d181-148b-da11-7060" name="Armour" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="497f-7ba5-ea51-26ee" name="Power Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
+              <entries>
+                <entry id="37cf-5a4a-ee3e-0707" name="Frag Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="6506-a735-2260-684f" targetId="59323c0b-e16f-e72a-273d-ca3bb30d53b7" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="4ca8-6777-d314-1977" name="Krak Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="4092-0888-b88b-a0d6" targetId="530bb69e-c246-fccd-1688-f1cfba50c251" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
               <entryGroups/>
               <modifiers/>
               <rules/>
@@ -1520,13 +1933,13 @@
         </entryGroup>
         <entryGroup id="c770-db46-f0ca-17ba" name="Special Issue Wargear" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
-            <entry id="9ee9-2064-679a-ee46" name="Blight grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="9ee9-2064-679a-ee46" name="Blight grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="show" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -1632,7 +2045,7 @@
                     </link>
                   </links>
                 </entry>
-                <entry id="4def-9e0c-d0b0-6829" name="Lightning Claw" points="17.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="4def-9e0c-d0b0-6829" name="Lightning Claw" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -1644,7 +2057,7 @@
                     </link>
                   </links>
                 </entry>
-                <entry id="c462-2681-7828-8835" name="Power Fist" points="22.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="c462-2681-7828-8835" name="Power Fist" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -1656,7 +2069,7 @@
                     </link>
                   </links>
                 </entry>
-                <entry id="38c5-179c-1a3e-9a58" name="Chainfist" points="27.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="38c5-179c-1a3e-9a58" name="Chainfist" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -1842,7 +2255,7 @@
             </modifier>
             <modifier type="set" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="D6" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="roster" childId="5fc4-d69b-0f19-e9ff" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="7806-e464-ae5c-dc49" childId="bfd3-fed0-1623-68e0" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -5430,6 +5843,30 @@
                 </link>
               </links>
             </entry>
+            <entry id="1914-e71c-1f0e-b83b" name="Krak Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="0226-3b6b-93eb-911a" targetId="530bb69e-c246-fccd-1688-f1cfba50c251" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="c966-6990-fcff-0a47" name="Frag Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="bfcc-42c2-eb2f-ca39" targetId="59323c0b-e16f-e72a-273d-ca3bb30d53b7" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
           </entries>
           <entryGroups/>
           <modifiers/>
@@ -5468,7 +5905,32 @@
           </links>
         </entry>
         <entry id="84a8-b394-b902-b0fa" name="Noise Marines" points="0.0" categoryId="(No Category)" type="model" minSelections="5" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
+          <entries>
+            <entry id="2a63-9376-69c5-d5e8" name="Krak Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="abf6-321d-e708-15f9" targetId="530bb69e-c246-fccd-1688-f1cfba50c251" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="9b65-a2d6-2d02-ff44" name="Frag Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="e03e-7951-1cef-6833" targetId="59323c0b-e16f-e72a-273d-ca3bb30d53b7" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
           <entryGroups/>
           <modifiers/>
           <rules/>
@@ -5766,7 +6228,7 @@
         </entry>
         <entry id="5b79-057c-8df0-6a4b" name="Plague Marine" points="0.0" categoryId="(No Category)" type="model" minSelections="6" maxSelections="6" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries>
-            <entry id="b1e9-55e7-ac7e-0581" name="Plague knife" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="b1e9-55e7-ac7e-0581" name="Plague knife" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -5778,7 +6240,7 @@
                 </link>
               </links>
             </entry>
-            <entry id="2cdf-27a1-1ade-2bd7" name="Boltgun" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="2cdf-27a1-1ade-2bd7" name="Boltgun" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -5790,7 +6252,7 @@
                 </link>
               </links>
             </entry>
-            <entry id="3b99-ee07-e2a2-42fc" name="Bolt pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="3b99-ee07-e2a2-42fc" name="Bolt pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -5802,7 +6264,7 @@
                 </link>
               </links>
             </entry>
-            <entry id="9b8e-a6a5-fb45-fa0a" name="Blight Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="9b8e-a6a5-fb45-fa0a" name="Blight Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -5814,7 +6276,7 @@
                 </link>
               </links>
             </entry>
-            <entry id="5ee0-c351-3060-1207" name="Krak Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="5ee0-c351-3060-1207" name="Krak Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -6407,10 +6869,17 @@
         </link>
       </links>
     </entry>
-    <entry id="3de21b5d-6727-1747-c64d-df79898949e1" name="Scrolls of Magnus" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="3de21b5d-6727-1747-c64d-df79898949e1" name="Scrolls of Magnus" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles>
         <profile id="0900766a-1438-2905-295b-791397de3f7c" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Scrolls of Magnus" hidden="false">
@@ -6437,7 +6906,32 @@
         <entryGroup id="ab4e-646b-1446-9f4f" name="Armour" defaultEntryId="4cd1-256b-4522-9f23" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="4cd1-256b-4522-9f23" name="Power Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
+              <entries>
+                <entry id="8369-7fca-222c-ee3f" name="Krak Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="964d-837e-700d-a607" targetId="530bb69e-c246-fccd-1688-f1cfba50c251" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="bc04-5ce4-bf19-576e" name="Frag Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="dfb2-6aa7-50e6-3d7f" targetId="59323c0b-e16f-e72a-273d-ca3bb30d53b7" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
               <entryGroups/>
               <modifiers/>
               <rules/>
@@ -7075,12 +7569,6 @@
             </modifier>
           </modifiers>
         </link>
-        <link id="c2d1-5582-9609-fb49" targetId="59323c0b-e16f-e72a-273d-ca3bb30d53b7" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="1590-633a-d75f-0d26" targetId="530bb69e-c246-fccd-1688-f1cfba50c251" linkType="profile">
-          <modifiers/>
-        </link>
         <link id="56fd-ca0f-4277-fcbb" targetId="32e2-1b64-64b1-a949" linkType="entry group">
           <modifiers/>
         </link>
@@ -7667,14 +8155,7 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
       <modifiers/>
       <links>
         <link id="c07b-5b18-8658-e273" targetId="3de21b5d-6727-1747-c64d-df79898949e1" linkType="entry">
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="direct parent" childId="0ccb-f974-0798-d3ce" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <modifiers/>
         </link>
         <link id="886c-d384-b808-eb71" targetId="ec5d28a5-45ee-3773-9ddb-3dfc4a77b0d7" linkType="entry">
           <modifiers/>
@@ -7987,361 +8468,65 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
       <links/>
     </entryGroup>
     <entryGroup id="342d-e8b6-eca8-4645" name="Eye of the Gods" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries>
-        <entry id="5fc4-d69b-0f19-e9ff" name="03 - Unstable Mutation" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="cd02-fc35-4a76-eea2" name="Unstable Mutation" hidden="false">
-              <description>Change the Attacks characteristic on your Champion’s profile to D6. </description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links/>
-        </entry>
-        <entry id="7679-115d-152c-a3f9" name="04 - Acidic Blood" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="e4ee-9e10-95fd-7d66" name="Acidic Blood" hidden="false">
-              <description>If your Champion is wounded in the combat phase, each enemy model in base contact suffers a S5 AP3 hit. </description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links/>
-        </entry>
-        <entry id="fe3c-267a-63d8-4e9c" name="05 - Soulscream" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="6db8-d17d-dcbb-7a86" name="Soulscream" hidden="false">
-              <description>Your Champion gains the Fear special rule. </description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links>
-            <link id="50e6-88d5-be2f-627b" targetId="4bf37f51-e484-ff05-0545-f477a09d1f6b" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="fefc-dd56-5263-9518" name="09 - Voice of the Gods" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="0f08-26d7-f3ed-3976" name="Voice of the Gods" hidden="false">
-              <description>Your Champion gains the Zealot special rule. </description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links>
-            <link id="3867-0386-38a8-f4ad" targetId="ce1d1a19-a570-d613-f5ea-793f6cc9dbc7" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="63b9-eaf6-8ef3-a9f1" name="10 - Daemonic Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="d1b0-788f-9f8b-4f64" name="Daemonic Armour" hidden="false">
-              <description> You can re-roll failed save rolls for your Champion. </description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links/>
-        </entry>
-        <entry id="edbd-eaff-96dc-f881" name="11 - Ascendancy" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="9141-5bb3-253b-0aec" name="Ascendancy" hidden="false">
-              <description>Your Champion gains the Daemon special rule. </description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links>
-            <link id="53aa-d443-6888-37c7" targetId="1e872ce3-4417-cd8f-5516-ccd120a2b36c" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="cffb-ecdc-625d-e886" name="06 - Dark Patronage (Tzeentch Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules>
-            <rule id="03fd-1890-9245-479f" name="Arcane Vessel" hidden="false">
-              <description>If you successfully make a Deny the Witch roll against a psychic power that targets your Champion or his unit, he regains D3 Wounds lost earlier in the battle. </description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links/>
-        </entry>
-        <entry id="de6b-0c73-ce44-2a4e" name="06 - Dark Patronage (Khorne Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules>
-            <rule id="af3f-8af0-bb8d-0bee" name="Brazen Will" hidden="false">
-              <description>When making a Deny the Witch roll for a psychic power that targets your Champion or his unit, roll two dice for each one you spend from your pool.</description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links/>
-        </entry>
-        <entry id="7d69-5699-6455-87f0" name="06 - Dark Patronage (Nurgle Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules>
-            <rule id="2f98-2475-da04-905d" name="Fleshy Folds" hidden="false">
-              <description>Your Champion gains the It Will Not Die special rule.</description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links>
-            <link id="a675-3dfc-2d57-dec5" targetId="893e92c2-a4b4-6646-8bac-bfa4ad7a776d" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="fb8f-c840-bf3f-3bfb" name="06 - Dark Patronage (Slaanesh Lesser Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules>
-            <rule id="a40a-b519-d384-0bb0" name="Sensory Abundance" hidden="false">
-              <description>Your Champion gains the Acute Senses and Night Vision special rules. </description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links>
-            <link id="8ad0-a8f5-1f5c-7ecb" targetId="aa22-0c2c-4620-bcab" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="0a81-4601-29c1-70e2" name="07 - Dark Patronage (Khorne Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules>
-            <rule id="03f8-36ed-7e76-824d" name="Red Rampage" hidden="false">
-              <description>Your Champion gains the Rampage special rule.</description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links>
-            <link id="786a-9bba-60a6-d96a" targetId="20402bc0-5a4f-0278-3cf9-5b7793fb5161" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="7fd8-ecb1-aa5f-6c48" name="08 - Dark Patronage (Khorne Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="3c70-0626-3082-4651" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules>
-            <rule id="8819-d40b-f8b1-6906" name="Slaughterer&apos;s Rage" hidden="false">
-              <description>Add 2 to your Champion’s Attacks characteristic. </description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links/>
-        </entry>
-        <entry id="5c76-61af-aaca-097f" name="07 - Dark Patronage (Nurgle Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules>
-            <rule id="b30d-6da9-12d2-8f17" name="Corpulent Mass" hidden="false">
-              <description>Add 1 to your Champion’s Wounds characteristic.</description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links/>
-        </entry>
-        <entry id="4f80-bbb6-7be0-2c5c" name="08 - Dark Patronage (Nurgle Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="fbbb-9d57-5198-0327" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules>
-            <rule id="feeb-5c1e-7bab-cfed" name="Cloud of Flies" hidden="false">
-              <description> Enemy models halve their Weapon Skill and Ballistic Skill, rounding down, while they are within 7&quot; of your Champion. </description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links/>
-        </entry>
-        <entry id="893d-9bc4-0223-051e" name="07 - Dark Patronage (Tzeentch Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules>
-            <rule id="43e4-bbab-396f-b186" name="Warpcraft" hidden="false">
-              <description>Your Champion gains the Deep Strike special rule. If you declare that he has joined a unit when he is placed in Reserve, that unit also gains the Deep Strike special rule.</description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links>
-            <link id="914b-83ef-7b25-9cc8" targetId="8716278e-3703-03c2-1f2c-f9b4f243155c" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="f14e-12eb-c28d-7a93" name="08 - Dark Patronage (Tzeentch Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="c79d-1608-b917-867b" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules>
-            <rule id="0ac9-4bd0-591d-ad4b" name="Secrets of Sorcery" hidden="false">
-              <description> Your Champion gains the Psyker special rule. Roll a D3 to determine his Mastery Level, and note this on your Warband Roster. He generates his powers from the Tzeentch discipline. Keep a note of which psychic powers he generates on your Warband Roster – he will keep these powers throughout the remainder of the campaign.</description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links>
-            <link id="936a-5a40-5393-efc2" targetId="2231f009-0a6e-e5f3-9976-c631d3ff7565" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="2876-b282-6b3a-f749" name="07 - Dark Patronage (Slaanesh Greater Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules>
-            <rule id="02ae-37d2-b6cd-ed90" name="Unnatural Swiftness" hidden="false">
-              <description>You can re-roll failed charge rolls for your Champion, and any unit he is part of. </description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links/>
-        </entry>
-        <entry id="85b6-18f1-bdff-39a8" name="08 - Dark Patronage (Slaanesh Exalted Reward)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="364c-28f6-3aca-4e7e" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules>
-            <rule id="e47b-c204-2b90-4efa" name="Bedazzling Assault" hidden="false">
-              <description>At the Initiative 10 step of the Fight sub-phase, each enemy unit that is locked in combat with your Champion, or his unit, must take an Initiative test. If the test is failed, that unit&apos;s Weapon Skill is reduced to 1 for the duration of the phase. </description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links/>
-        </entry>
-      </entries>
+      <entries/>
       <entryGroups/>
       <modifiers/>
-      <links/>
+      <links>
+        <link id="0586-fd54-1c22-825b" targetId="bfd3-fed0-1623-68e0" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="18cd-959a-748b-0f72" targetId="632b-ebc4-0e6d-026a" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="5197-ceb0-4d99-1516" targetId="3a58-29de-9724-de17" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="b39c-4869-899b-daaf" targetId="e770-b059-d81d-991f" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="f75a-1a1d-ad00-4233" targetId="41f6-f8b3-4a39-a1b4" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="773f-2231-b2a8-13f5" targetId="30fe-b97a-6f28-5031" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="0dda-7423-9789-07b5" targetId="5e33-da8c-f058-b8cf" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="e70b-bfe4-8c7e-3197" targetId="d35b-9518-310c-cc54" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="0bb8-c533-e3e0-c920" targetId="61ec-2c55-22ba-058f" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="4f9d-3a90-41e7-87e0" targetId="9d8f-7c4c-bb5e-0c40" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="26bf-97ab-f0e9-d319" targetId="536a-2efe-8abd-2aec" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="b5ca-7f6a-5011-2af9" targetId="7be9-f13e-f9ec-d9a4" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="dde4-b8a5-1e38-572c" targetId="8422-aa52-3923-e89e" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="b810-98e3-fd56-231c" targetId="2117-819a-becf-619e" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="3e09-c5e0-91ae-b9f1" targetId="4038-6408-ecd3-09ec" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="4b24-1e90-eecc-428d" targetId="54ad-0150-4a62-42f2" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="109f-25cd-2f29-61d7" targetId="87a3-125c-b24c-bd54" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="e15e-61c3-beb4-a231" targetId="039f-76dc-179e-0e11" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
     </entryGroup>
     <entryGroup id="510d2050-e668-b844-1ab4-221cd947e968" name="Force Weapon options" defaultEntryId="7ba31de6-2773-1aa7-86a4-b5b58add5702" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -9179,36 +9364,6 @@ Codex: Grey Knights
     </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="b3b46233-86c7-6f7b-f11e-d08fc7b2a83d" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Abaddon the Despoiler: Warmaster of Chaos" hidden="false" page="0">
-      <characteristics>
-        <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
-        <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="7"/>
-        <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="5"/>
-        <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4(8)"/>
-        <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="5"/>
-        <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="4"/>
-        <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="6"/>
-        <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="4"/>
-        <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="10"/>
-        <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="2+/4++"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="1fb582c6-659d-8493-58ba-feab666ce8d9" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Ahriman the Exiled One" hidden="false" page="0">
-      <characteristics>
-        <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry"/>
-        <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="5"/>
-        <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="5"/>
-        <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
-        <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="4"/>
-        <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="3"/>
-        <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="5"/>
-        <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="3"/>
-        <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="10"/>
-        <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+/4+"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
     <profile id="65fbd0d9-1c53-4b15-9d04-9ec3b5ab03ca" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Armour of Shrieking Souls" hidden="false" page="0">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="5+ Invul save. Model that cause the would suffer S 4 AP 2 hit with Ignore Cover rule"/>
